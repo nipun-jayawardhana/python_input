@@ -1,14 +1,9 @@
-i=1
-while i <= 5:
-  mark=int (input(f"Enter marks {i}:"))
-  if mark > 75:
-      print("A")
-  elif 65 < mark < 75 :
-      print("B")  
-  elif 55 < mark < 64 :
-      print("C")
-  elif 55 < mark < 64 :
-      print("S")      
-  else:
-      print("fail")    
-i=i+1      
+sum=0
+for i in iter(int, 1): 
+  mark=int (input("Enter marks :"))
+  sum = sum + mark
+  if mark == -999:
+      print(sum)
+      
+  
+     
